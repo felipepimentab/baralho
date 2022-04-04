@@ -25,7 +25,6 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  position: fixed;
   top: 0;
   width: 100%;
   background-color: #1d1227;
@@ -35,14 +34,15 @@ export default {
 
   &__title {
     font-weight: 400;
-    margin: 1rem;
+    margin: 0.5rem 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
     font-family: 'Patua One', cursive;
   }
 
   &__nav {
-    margin: 1rem;
+    margin: 0.5rem 1rem;
 
     &__button {
       background-color: transparent;

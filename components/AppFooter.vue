@@ -16,14 +16,16 @@ export default {
 <style lang="scss" scoped>
 .footer {
   display: grid;
-  grid-template-columns: 1fr auto;
   position: fixed;
+  grid-template-columns: 1fr auto;
   bottom: 0;
   left: 0;
+  margin: 0;
   padding: 0.5rem 0.5rem 1.5rem 0.5rem;
-  width: calc(100% - 1rem);
+  width: 100vw;
+  height: 5.25rem;
   /* From https://css.glass */
-  background: rgba($color: white, $alpha: 0.4);
+  background: rgba($color: white, $alpha: 0.7);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px); */
@@ -41,7 +43,7 @@ export default {
     color: whitesmoke;
 
     &--new-card {
-      background-color: rgba($color: rgb(29, 18, 39), $alpha: 0.8);
+      background-color: rgba($color: rgb(29, 18, 39), $alpha: 1);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
     }
 
@@ -49,7 +51,7 @@ export default {
       border-color: transparent;
       background-color: transparent;
       border-radius: 9999px;
-      fill: whitesmoke;
+      fill: rgb(29, 18, 39);
     }
   }
 }

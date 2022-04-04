@@ -313,15 +313,15 @@ export default {
 .main {
   color: white;
   font-size: 1rem;
-  padding-top: 71px;
+  height: calc(100vh - 9.25rem);
 }
 
 .card-list {
-  width: calc(100% - 2rem);
+  width: 100%;
   padding: 0 1rem;
   margin: 0;
   list-style-type: none;
-  max-height: calc(100vh - 10rem);
+  max-height: calc(100vh - 24.25rem);
   overflow-y: auto;
   scroll-behavior: smooth;
 
@@ -341,11 +341,15 @@ export default {
     &__icon {
       display: flex;
       align-items: center;
-      padding: 0 1.5rem 0 0.5rem;
+      padding: 0 1.5rem 0 0;
 
       &__letter {
         font-size: 2rem;
         margin: 0 0.3rem 0 0;
+        width: 1.85rem;
+        text-align: end;
+        display: flex;
+        flex-direction: row-reverse;
         font-family: 'Patua One', cursive;
       }
 
