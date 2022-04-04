@@ -25,8 +25,10 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
+  background-color: #1d1227;
   display: flex;
   justify-content: space-between;
   align-items: center;

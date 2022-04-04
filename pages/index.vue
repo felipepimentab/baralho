@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <FirstCard :card="deck[0]" />
     <ul class="card-list">
       <li v-for="card in deck" :key="card">
         <div class="card-list__item">
@@ -21,12 +22,14 @@
 
 <script>
 import CardSuit from '~/components/CardSuit.vue';
+import FirstCard from '~/components/FirstCard.vue';
 
 export default {
   name: 'IndexPage',
 
   components: {
     CardSuit,
+    FirstCard,
   },
 
   data() {
@@ -310,6 +313,7 @@ export default {
 .main {
   color: white;
   font-size: 1rem;
+  padding-top: 71px;
 }
 
 .card-list {
@@ -328,8 +332,8 @@ export default {
     padding: 0.5rem;
     margin: 0.5rem 0;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     /* backdrop-filter: blur(2.9px);
     -webkit-backdrop-filter: blur(2.9px); */
@@ -346,7 +350,7 @@ export default {
       }
 
       &__suit {
-        width: 2rem;
+        width: 1.5rem;
       }
     }
 
@@ -354,7 +358,7 @@ export default {
       margin: 0;
       font-size: 1.2rem;
       padding: 0;
-      color: black;
+      color: whitesmoke;
     }
   }
 
