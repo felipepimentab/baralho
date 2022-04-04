@@ -26,7 +26,7 @@ export default {
 
   props: {
     suit: {
-      type: Object,
+      type: String,
       required: true,
     },
     alt: {

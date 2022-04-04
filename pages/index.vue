@@ -307,8 +307,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 .main {
   color: white;
   font-size: 1rem;
