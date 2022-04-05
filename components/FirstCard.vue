@@ -1,7 +1,8 @@
 <template>
   <div
+    v-if="card"
     class="first-card"
-    :class="{'first-card--red': card.suit === 'copas' || card-suit === 'ouros'}"  
+    :class="{'first-card--red': card.suit === 'copas' || card.suit === 'ouros'}"  
   >
     <div class="first-card__top">
       <span class="first-card__top__letter">{{ card.letter }}</span>
